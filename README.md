@@ -24,7 +24,7 @@ Due to student account limitations, I couldn’t deploy Unity Catalog or metadat
 ```python
 spark.conf.set(
     "fs.azure.account.key.netflixdatalakes.dfs.core.windows.net",
-    dbutils.secrets.get(scope="mysecrets", key="netflix_key")
+    dbutils.secrets.get(scope="scope_name", key="key_name")
 )
 ```
 
